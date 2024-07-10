@@ -1,6 +1,8 @@
-package modules.commons.search;
+package modules.commons.search.request;
 
 public class SearchFilter {
+	
+	private boolean isVariant;
 	
 	private String field;
 	private String value;
@@ -15,6 +17,12 @@ public class SearchFilter {
 	}
 	public void setValue(String value) {
 		this.value = value;
+	}
+	public boolean isVariant() {
+		return isVariant;
+	}
+	public void setVariant(boolean isVariant) {
+		this.isVariant = isVariant;
 	}
 
 }
